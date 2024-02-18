@@ -1,6 +1,7 @@
 {
 	"name": "kanji2hiragana-map",
 	"description": "Kanji to Hiragana Map",
+	"version": "0.0.1",
 	"type": "module",
 	"exports": {
 		".": "./data-sources/mergeds.json",
@@ -15,6 +16,7 @@
 		"./data-sources/mergeds.json"
 	],
 	"devDependencies": {
+		"@changesets/cli": "^2.27.1",
 		"japanese-data-module": "^3.0.0",
 		"typescript": "^5.3.3",
 		"wireit": "^0.14.4"
