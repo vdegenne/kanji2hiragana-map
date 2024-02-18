@@ -1,19 +1,19 @@
 {
 	"name": "kanji2hiragana-map",
-	"description": "Kanji to Hiragana Map ",
+	"description": "Kanji to Hiragana Map",
 	"type": "module",
-	"main": "",
-	"module": "",
 	"exports": {
-		".": {}
+		".": "./data-sources/mergeds.json",
+		"./map.json": "./data-sources/mergeds.json"
 	},
-	"types": "",
 	"scripts": {
 		"build": "wireit",
 		"script:create-map-from-jdm": "wireit",
 		"script:merge-data-sources": "wireit"
 	},
-	"files": [],
+	"files": [
+		"./data-sources/mergeds.json"
+	],
 	"devDependencies": {
 		"japanese-data-module": "^3.0.0",
 		"typescript": "^5.3.3",
