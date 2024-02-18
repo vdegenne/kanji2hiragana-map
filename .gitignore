@@ -1,0 +1,4 @@
+/node_modules
+/.wireit
+/data-sources/jdm.json
+/data-sources/mergeds.json
