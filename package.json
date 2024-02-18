@@ -1,11 +1,13 @@
 {
 	"name": "kanji2hiragana-map",
 	"description": "Kanji to Hiragana Map",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"type": "module",
 	"exports": {
-		".": "./data-sources/mergeds.json",
-		"./map.json": "./data-sources/mergeds.json"
+		".": {
+			"default": "./data-sources/mergeds.json",
+			"types": "./index.d.ts"
+		}
 	},
 	"scripts": {
 		"build": "wireit",
@@ -13,7 +15,8 @@
 		"script:merge-data-sources": "wireit"
 	},
 	"files": [
-		"./data-sources/mergeds.json"
+		"./data-sources/mergeds.json",
+		"./index.d.ts"
 	],
 	"devDependencies": {
 		"@changesets/cli": "^2.27.1",
